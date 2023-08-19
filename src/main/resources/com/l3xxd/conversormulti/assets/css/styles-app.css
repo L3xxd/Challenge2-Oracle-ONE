@@ -1,0 +1,45 @@
+/* Author: Alejandro Balderas Rios */
+
+/* ------------ [ Section Main ] ------------    */
+.pane_Main{
+    -fx-background-color:  #fff;
+    -fx-font-family: "Consolas";
+}
+
+.button_GoToMenu{
+    -fx-background-color:  #fff;
+    -fx-border-color:  #111;
+    -fx-border-radius:  10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #111;
+    -fx-text-alignment: center;
+}
+
+.button_Convertir{
+    -fx-background-color:  #fff;
+    -fx-border-color:  #111;
+    -fx-border-radius:  10;
+    -fx-font-size: 16px;
+    -fx-text-fill: #111;
+    -fx-text-alignment: center;
+}
+.button_Convertir:hover{
+    -fx-background-color:  #fff;
+    -fx-border-color:  #0079FF;
+    -fx-border-radius:  10;
+    -fx-font-size: 16px;
+    -fx-text-fill: #0079FF;
+    -fx-text-alignment: center;
+}
+.label_TitleApp{
+    -fx-text-fill: #111;
+    -fx-font-size: 32px;
+    -fx-text-alignment: center;
+}
+.label_ResultApp{
+    -fx-text-fill: #0079ff;
+    -fx-font-size: 26px;
+    -fx-text-alignment: center;
+}
+
+

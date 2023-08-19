@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" stylesheets="@assets/css/styles-app.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.l3xxd.conversormulti.AppController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="800.0" styleClass="pane_Main" stylesheets="@assets/css/styles-app.css">
+         <children>
+            <Button fx:id="btn_BackToMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#GoToMenu" prefHeight="25.0" prefWidth="23.0" styleClass="button_GoToMenu">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Consolas" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                     <image>
+                        <Image url="@assets/img/UI/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Pane layoutX="26.0" layoutY="62.0" prefHeight="413.0" prefWidth="749.0">
+               <children>
+                  <ChoiceBox fx:id="chbox_values_1" layoutX="144.0" layoutY="200.0" prefHeight="25.0" prefWidth="216.0" />
+                  <Label fx:id="lblFinal" alignment="CENTER" layoutX="145.0" layoutY="328.0" prefHeight="38.0" prefWidth="489.0" styleClass="label_ResultApp" text="Saldo Final" textAlignment="CENTER">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_Convertir" layoutX="326.0" layoutY="246.0" mnemonicParsing="false" onAction="#GoConversor" prefHeight="40.0" prefWidth="135.0" styleClass="button_Convertir" text="Convertir">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font></Button>
+                  <ChoiceBox fx:id="chbox_values_2" layoutX="417.0" layoutY="200.0" prefHeight="25.0" prefWidth="216.0" />
+                  <TextField fx:id="valueField" layoutX="144.0" layoutY="119.0" prefHeight="25.0" prefWidth="489.0" />
+                  <Label layoutX="145.0" layoutY="92.0" text="Ingrese la cantidad :">
+                     <font>
+                        <Font name="Consolas" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_TitleApp" alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" prefHeight="47.0" prefWidth="489.0" styleClass="label_TitleApp" text="Titulo" textAlignment="CENTER">
+                     <font>
+                        <Font name="Consolas" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
